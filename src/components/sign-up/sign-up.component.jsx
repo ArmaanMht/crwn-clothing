@@ -19,6 +19,7 @@ export default class SignIn extends Component {
 
     handleSubmit = async (e) => {
         e.preventDefault();
+        // console.log(this.state)
         const { displayName, email, password, confirmPassword } = this.state;
         if (password !== confirmPassword) {
             alert("Password's Don't Match.");
