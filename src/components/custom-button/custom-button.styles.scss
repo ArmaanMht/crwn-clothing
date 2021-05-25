@@ -13,11 +13,16 @@
     font-weight: bolder;
     border: none;
     cursor: pointer;
-  
+    display: flex;
+    text-align: center;
     &:hover {
       background-color: white;
       color: black;
       border: 1px solid black;
+    }
+
+    &:first-child{
+      color: #4285f4;
     }
 
     &.google-sign-in{
@@ -28,6 +33,20 @@
           border: 1px solid black;
           color: black;
         }
+
+    }
+    &.inverted{
+      background-color: white;
+      color: black;
+      border: 1px solid black;
+      display: flex;
+      &:first-child{
+        color: #4285f4;
+      }
+      &:hover{
+        background-color: black;
+        color: white;
+      }
     }
   }
   
